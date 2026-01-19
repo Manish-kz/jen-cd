@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Manish-kz/jen-cd.git'
+               git branch: 'main', url: 'https://github.com/Manish-kz/jen-cd.git'
             }
         }
 
